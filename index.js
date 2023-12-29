@@ -39,24 +39,5 @@ buttons.forEach((button) => {
       });
     }
   });
-  button.addEventListener("touchstart", function () {
-    if (button.classList.contains("switch-1")) {
-      document
-        .querySelector(":root")
-        .style.setProperty(`--image-url`, "url(./image/bw_bg.webp)");
-      document.querySelector("body").style.backgroundPosition = "40% 20%";
-      images.forEach((images, index) => {
-        images.src = `./image/bw_${index}.webp`;
-      });
-    }
-    if (button.classList.contains("switch-2")) {
-      document
-        .querySelector(":root")
-        .style.setProperty(`--image-url`, "url(./image/color_bg.webp)");
-      document.querySelector("body").style.backgroundPosition = "50%";
-      images.forEach((images, index) => {
-        images.src = `./image/color_${index}.webp`;
-      });
-    }
-  });
+
 });
