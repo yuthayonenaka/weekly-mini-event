@@ -67,7 +67,8 @@ video {
 
 .switch-container {
   position: absolute;
-  top: 3.1rem;
+  z-index: 999;
+  top: 8.1rem;
   left: 2rem;
   display: flex;
   gap: 1rem;
